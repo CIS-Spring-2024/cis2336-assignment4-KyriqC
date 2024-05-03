@@ -1,0 +1,359 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+body{
+    font-family: verdana;
+}
+.wrapper{
+    width: 90%;
+    margin: 0 auto;
+}
+header{
+    width: 100%;
+    height: 100px;
+    background-image: url(../Images/TUoHSL.jpg);
+    position: fixed;
+    z-index: 1000;
+}
+.logo{
+    width: 30%;
+    height: 40%;
+    float: left;
+    line-height: 100px;
+    cursor: pointer;
+}
+.logo img{
+    size: auto;
+    height: 100px;
+}
+nav{
+    list-style: none;
+    float: right;
+    line-height: -100px;
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    position: relative;
+}
+nav a{
+    text-decoration: none;
+    letter-spacing: 4px;
+    font-size: 20px;
+    color:red;
+    padding: 36px 10px;
+    margin: 0 1;
+    text-transform: uppercase;
+    font-weight: 400px;
+}
+nav a:hover{
+    background: white;
+    color: black;
+}
+.banner-area{
+    background-image: url(../Images/sugar-land-academic-building.jpg);
+    background-size: cover;
+    background-position: center center;
+    height: 100%;
+    width: 100%;
+    
+    
+}
+
+.content{
+    width: 100%;
+    position: relative;
+    text-align: center;
+    color: black;
+}
+.content h1{
+    font-size: 50px;
+    margin-top: 50px;
+}
+.content p{
+    margin: 20px auto;
+    font-weight: 100;
+    line-height: 25px;
+}
+.c-fruit{
+    width: 100%;
+    position: relative;
+    text-align: center;
+    color: black;
+   
+    
+}
+.c-fruit figure img{
+    
+    border: 1px solid #ddd;
+    border-radius: 50%;
+    padding: 5px; 
+    width: 150px;
+}
+.c-veggies{
+    width: 100%;
+    position: relative;
+    text-align: center;
+    color: black;
+}
+.c-veggies figure img{
+    border: 1px solid #ddd;
+    border-radius: 50%;
+    padding: 5px; 
+    width: 150px;
+}
+.c-beef{
+    width: 100%;
+    position: relative;
+    text-align: center;
+    color: black;
+}
+.c-beef figure img{
+    border: 1px solid #ddd;
+    border-radius: 50%;
+    padding: 5px; 
+    width: 150px;
+}
+.c-chicken{
+    width: 100%;
+    position: relative;
+    text-align: center;
+    color: black;
+}
+.c-chicken figure img{
+    border: 1px solid #ddd;
+    border-radius: 50%;
+    padding: 5px; 
+    width: 150px;
+}
+.c-seafood{
+    width: 100%;
+    position: relative;
+    text-align: center;
+    color: black;
+}
+.c-seafood figure img{
+    border: 1px solid #ddd;
+    border-radius: 50%;
+    padding: 5px; 
+    width: 150px;
+}
+.c-treats{
+    width: 100%;
+    position: relative;
+    text-align: center;
+    color: black;
+}
+.c-treats figure img{
+    border: 1px solid #ddd;
+    border-radius: 50%;
+    padding: 5px; 
+    width: 150px;
+}
+.c-treats .button {
+            display: inline-block;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            text-align: center;
+            text-decoration: none;
+            color: white;
+            background-color: yellow;
+            border: none;
+            border-radius: 5px;
+            color:black;
+}
+.c-treats .button:hover {
+            background-color: #45a049;
+}   
+.footerContainer{
+    height: 20vh;
+    padding: 20px 30px;
+    width: 100%;
+    background-color: lightcoral;
+}
+footer{
+    bottom: 0;
+    height: 20vh;
+    width: 100%;
+    margin-top: auto;
+    background-color: lightcoral;
+    justify-content: center;
+}
+footer p{
+    background-color: lightcoral;
+    text-align: center;
+    width: 100%;
+}
+.socialIcons{
+    display: flex;
+    justify-content: center;
+}
+.socialIcons a{
+    text-decoration: none;
+    padding: 10px;
+    background-color: white;
+    margin: 10px;
+    border-radius: 50%;
+    top: 500%;
+}
+.socialIcons a i{
+    font-size: 2em;
+    color: black;
+    opacity: .9;
+}
+.container{
+    background-color: lightcoral;
+    border: 5px solid black;
+    padding: auto;
+    display: flex;
+    width: 100%;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+}
+.container h2{
+    text-align: center;
+    position: relative;
+}
+.img-container{
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 2px solid black;
+    margin-right: 20px;
+    background-color: lightcoral;
+}
+.img-container img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.container p{
+    position: relative;
+    text-align: justify;
+}
+.menu-area{
+    width: 100%;
+    position: relative;
+    text-align: center;
+    color: black;
+}
+.menu-area h1{
+    font-size: 70px;
+  font-weight: 600;
+  background-image: linear-gradient(to left, red, white);
+  color: transparent;
+  background-clip: text;
+  padding: 10px;
+}
+.menu-area button{
+    height: 50px;
+    width: 200px;
+    padding: 10px 20px;
+    background-color: red;
+    color: white;
+    border: none;
+    cursor: pointer;
+    margin-bottom: 10px;
+    border: 1px;
+    transition-duration: .4s;
+}
+.menu-area button:hover{
+        background-color: red;
+        color: white;
+}
+.entrees {
+    padding: 10px;
+}
+.item button{
+    border-radius: 50%;
+
+}
+.menu-area img{
+    border: 1px solid #ddd;
+    border-radius: 50%;
+    padding: 5px; 
+    width: 150px;
+}
+.menu-area table{
+    margin-left: 200px;
+
+}
+.blog-header {
+    text-align: center;
+}
+.blog-header h1 {
+    font-size: 70px;
+  font-weight: 600;
+  background-image: linear-gradient(to left, red, white);
+  color: transparent;
+  background-clip: text;
+  padding: 10px;
+}
+.recipe-container {
+    width: 80%;
+    margin: 20px auto;
+    background: white;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+.recipe {
+    text-align: center;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #ddd;
+}
+.recipe:last-child {
+    border-bottom: none;
+}
+.recipe img {
+    width: 500px;
+    height: auto;
+    border: 1px solid #ddd;
+    border-radius: 50%;
+    padding: 5px;
+ 
+}
+.coming-soon {
+    text-align: center;
+    font-size: 24px;
+    padding: 50px;
+    background: #eee;
+    color: #333;
+}
+.map-div {
+    align-items: center;
+}
+.contact-container {
+    padding: 20px;
+    max-width: 800px;
+    margin: auto;
+}
+.info, .form-section {
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #f4f4f4;
+}
+input[type=text], input[type=email], input[type=tel] {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0 15px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+input[type=submit] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+}
+input[type=submit]:hover {
+    opacity: 0.5;
+}

@@ -1,0 +1,115 @@
+<html>
+    <head>
+        <meta name="viewport" content="with=device-width, initial-scale=1.0">
+        <title>Contact</title>
+        <link rel="stylesheet" href="../CSS/style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" 
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" 
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <script src="../Javascript/script.js"></script>
+    </head>
+    <body>
+        <div class="box-area">
+            <header>
+                <div class="wrapper">
+                    <div class="logo">
+                        <img src="../Images/Kyriqcafelogo.png">
+                    </div>
+    
+                    <nav>
+                        <a href="Homepage.html">Home</a>
+                        <a href="Biography.html">Biography</a>
+                        <a href="menu.html">Menu</a>
+                        <a href="orderonline.html">Order Online</a>
+                        <a href="foodblog.html">Food Blog</a>
+                        <a href="contact.html">Contact</a>
+                    </nav>
+                </div>
+            </header>
+            <div class="banner-area">
+    
+            </div>
+        </div>
+        <div class="map-div">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3469.9786506116525!2d-95.6530468253393!3d29.57522447516321!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x880e2e2962848a61%3A0xa38c5abd5632d00f!2sUniversity%20of%20Houston%20at%20Sugar%20Land!5e0!3m2!1sen!2sus!4v1709519323806!5m2!1sen!2sus" width=100% height="550" ></iframe> 
+        </div>
+        <div class="contact-container">
+            <div class="info">
+                <h2>Opening Hours</h2>
+                <p>Monday - Friday: 9 AM - 9 PM</p>
+                <p>Saturday - Sunday: 10 AM - 11 PM</p>
+
+                <h2>Contact Information</h2>
+                <p>Email: kecole2@cougarnet.uh.edu</p>
+                <p>Phone: (123) 456-7890</p>
+            </div>
+
+            <div class="form-section">
+                <h2>Join Our Team</h2>
+                <form id="joinForm">
+                    <label for="fname">First Name:</label>
+                    <input type="text" id="fname" name="first_name" required>
+                    
+                    <label for="lname">Last Name:</label>
+                    <input type="text" id="lname" name="last_name" required>
+                    
+                    <label for="phone">Phone Number:</label>
+                    <input type="tel" id="phone" name="phone" required>
+                    
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                    
+                    <input type="submit" value="Submit">
+                </form>
+                <script>
+                    document.getElementById('joinForm').addEventListener('submit', function(event) {
+        event.preventDefault(); // Prevent the default form submission
+
+        const formData = new FormData(this); // 'this' refers to the form
+        
+        fetch('/submit-form', { // Endpoint where you want to submit the form data
+            method: 'POST',
+            body: formData
+        })
+        .then(response => {
+            if (response.ok) {
+                return response.json(); // or response.text() if the server returns plain text
+            }
+            throw new Error('Network response was not ok.');
+        })
+        .then(data => {
+            console.log('Success:', data);
+            alert('Form submitted successfully!');
+        })
+        .catch(error => {
+            console.error('Error:', error);
+            alert('Error submitting the form.');
+        });
+    });
+                </script>
+            </div>
+           
+
+
+        </div>
+        <footer>
+            <div class="footerContainer">
+                <div class="socialIcons">
+                    <a href=""><i class="fa-brands fa-facebook"></i></a>
+                    <a href=""><i class="fa-brands fa-instagram"></i></a>
+                    <a href=""><i class="fa-brands fa-twitter"></i></a>
+                    <a href=""><i class="fa-brands fa-google-plus"></i></a>
+                    <a href=""><i class="fa-brands fa-youtube"></i></a>
+                </div>
+            </div>
+                <p>
+                    &copy; Copyright Reserved.
+                    <br>Sunday-Friday 11am-8pm
+                    <br>Closed on Saturday
+                    <br> <br>
+                    14000 University Blvd,<br> Sugar Land, Tx, 77479
+                </p>
+        </footer> 
+            
+    </body>
+</html>
